@@ -1,0 +1,124 @@
+{
+  "namespace": "App",
+  "components": [
+    [
+      "APP-MARKED",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      },
+      [
+        [
+          "doc",
+          1
+        ]
+      ]
+    ],
+    [
+      "BASICS-COMPONENTS",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "CODE-SPLITTING",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "COMPILER-CONFIG",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "DEMOS-PAGE",
+      "ne9tucbb",
+      {
+        "$": "f4dzel8a"
+      }
+    ],
+    [
+      "GETTING-STARTED",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "LANDING-PAGE",
+      "dqnthxd1",
+      {
+        "$": "zvzanw6n"
+      }
+    ],
+    [
+      "SITE-HEADER",
+      "dqnthxd1",
+      {
+        "$": "zvzanw6n"
+      }
+    ],
+    [
+      "SITE-MENU",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "STENCIL-ROUTE",
+      "i5pk3j36",
+      {}
+    ],
+    [
+      "STENCIL-ROUTE-LINK",
+      "i5pk3j36",
+      {},
+      0,
+      0,
+      1
+    ],
+    [
+      "STENCIL-ROUTER",
+      "i5pk3j36",
+      {},
+      0,
+      0,
+      1
+    ],
+    [
+      "STENCIL-ROUTER-REDIRECT",
+      "i5pk3j36",
+      {}
+    ],
+    [
+      "STENCIL-SITE",
+      "dqnthxd1",
+      {
+        "$": "zvzanw6n"
+      }
+    ],
+    [
+      "STENCIL-SSR",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ],
+    [
+      "WHAT-IS",
+      "68j7pqar",
+      {
+        "$": "cfcmxgd7"
+      }
+    ]
+  ],
+  "loader": "app.js",
+  "core": "app/app.qdftyvkp.js",
+  "corePolyfilled": "app/app.dxlwkaar.pf.js"
+}
