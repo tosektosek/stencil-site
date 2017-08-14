@@ -3,7 +3,7 @@
   "components": [
     [
       "APP-MARKED",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       },
@@ -16,21 +16,21 @@
     ],
     [
       "BASICS-COMPONENTS",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
     ],
     [
       "CODE-SPLITTING",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
     ],
     [
       "COMPILER-CONFIG",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
@@ -44,28 +44,28 @@
     ],
     [
       "GETTING-STARTED",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
     ],
     [
       "LANDING-PAGE",
-      "dqnthxd1",
+      "aaa4bplv",
       {
         "$": "zvzanw6n"
       }
     ],
     [
       "SITE-HEADER",
-      "dqnthxd1",
+      "aaa4bplv",
       {
         "$": "zvzanw6n"
       }
     ],
     [
       "SITE-MENU",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
@@ -98,21 +98,21 @@
     ],
     [
       "STENCIL-SITE",
-      "dqnthxd1",
+      "aaa4bplv",
       {
         "$": "zvzanw6n"
       }
     ],
     [
       "STENCIL-SSR",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
     ],
     [
       "WHAT-IS",
-      "68j7pqar",
+      "7lrbzupz",
       {
         "$": "cfcmxgd7"
       }
