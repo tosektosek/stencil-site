@@ -3,9 +3,9 @@
   "components": [
     [
       "APP-MARKED",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       },
       [
         [
@@ -16,23 +16,23 @@
     ],
     [
       "BASICS-COMPONENTS",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
       "CODE-SPLITTING",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
       "COMPILER-CONFIG",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
@@ -44,30 +44,30 @@
     ],
     [
       "GETTING-STARTED",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
       "LANDING-PAGE",
       "uja9hzyt",
       {
-        "$": "miqx3cex"
+        "$": "tmfyat8x"
       }
     ],
     [
       "SITE-HEADER",
       "uja9hzyt",
       {
-        "$": "miqx3cex"
+        "$": "tmfyat8x"
       }
     ],
     [
       "SITE-MENU",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
@@ -100,21 +100,21 @@
       "STENCIL-SITE",
       "uja9hzyt",
       {
-        "$": "miqx3cex"
+        "$": "tmfyat8x"
       }
     ],
     [
       "STENCIL-SSR",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ],
     [
       "WHAT-IS",
-      "7lrbzupz",
+      "7uf8zywd",
       {
-        "$": "tzneagxk"
+        "$": "0xrslevf"
       }
     ]
   ],
