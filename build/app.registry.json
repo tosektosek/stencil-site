@@ -3,9 +3,9 @@
   "components": [
     [
       "APP-MARKED",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       },
       [
         [
@@ -16,23 +16,30 @@
     ],
     [
       "BASICS-COMPONENTS",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
+      }
+    ],
+    [
+      "BASICS-ROUTING",
+      "gxkkz3fx",
+      {
+        "$": "iuggoepv"
       }
     ],
     [
       "CODE-SPLITTING",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ],
     [
       "COMPILER-CONFIG",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ],
     [
@@ -44,30 +51,30 @@
     ],
     [
       "GETTING-STARTED",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ],
     [
       "LANDING-PAGE",
-      "w6se3njo",
+      "xtp4xa7z",
       {
-        "$": "vtezdtc4"
+        "$": "ndkxba5c"
       }
     ],
     [
       "SITE-HEADER",
-      "w6se3njo",
+      "xtp4xa7z",
       {
-        "$": "vtezdtc4"
+        "$": "ndkxba5c"
       }
     ],
     [
       "SITE-MENU",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ],
     [
@@ -98,23 +105,23 @@
     ],
     [
       "STENCIL-SITE",
-      "w6se3njo",
+      "xtp4xa7z",
       {
-        "$": "vtezdtc4"
+        "$": "ndkxba5c"
       }
     ],
     [
       "STENCIL-SSR",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ],
     [
       "WHAT-IS",
-      "qzidwnwm",
+      "gxkkz3fx",
       {
-        "$": "87tmohzb"
+        "$": "iuggoepv"
       }
     ]
   ],
