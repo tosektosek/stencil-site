@@ -1,0 +1,20 @@
+community-page {
+  #contribs {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .contributor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      border-radius: 50%;
+      height: 100px;
+    }
+  }
+}

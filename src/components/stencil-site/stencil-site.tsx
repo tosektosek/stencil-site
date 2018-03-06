@@ -19,7 +19,8 @@ export class App {
                 "/docs",
                 "/demos",
                 "/resources",
-                "/pwa"
+                "/pwa",
+                "/community"
               ]}
               routeRender={() => {
                 return (
@@ -65,6 +66,7 @@ export class App {
                       />
                       <stencil-route url="/resources" component="resources-page" />
                       <stencil-route url="/pwa" component="pwas-page" />
+                      <stencil-route url="/community" component="community-page" />
                     </div>
                   </div>
                 );

@@ -3,15 +3,22 @@
  * It contains typing information for all components that exist in this project
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
-
-
 declare global {
+  namespace JSX {
+    interface Element {}
+    export interface IntrinsicElements {}
+  }
+  namespace JSXElements {}
+
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
     componentOnReady(done: (ele?: this) => void): void;
   }
+
+  interface HTMLAttributes {}
 }
 
+import '@stencil/router';
 
 
 import {
@@ -39,6 +46,36 @@ declare global {
   namespace JSXElements {
     export interface AppMarkedAttributes extends HTMLAttributes {
       doc?: string;
+    }
+  }
+}
+
+
+import {
+  CommunityPage as CommunityPage
+} from './components/community-page/community-page';
+
+declare global {
+  interface HTMLCommunityPageElement extends CommunityPage, HTMLStencilElement {
+  }
+  var HTMLCommunityPageElement: {
+    prototype: HTMLCommunityPageElement;
+    new (): HTMLCommunityPageElement;
+  };
+  interface HTMLElementTagNameMap {
+    "community-page": HTMLCommunityPageElement;
+  }
+  interface ElementTagNameMap {
+    "community-page": HTMLCommunityPageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "community-page": JSXElements.CommunityPageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CommunityPageAttributes extends HTMLAttributes {
+      
     }
   }
 }

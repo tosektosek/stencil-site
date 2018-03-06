@@ -86,7 +86,7 @@ export class pwasPage {
           web manifest <a href="https://github.com/ionic-team/ionic-pwa-toolkit/blob/master/src/manifest.json">here</a>.
         </p>
 
-        <h4>PWAs built with Stencil</h4>
+        <h4>PWAs built with Stencil and the Ionic PWA Toolkit</h4>
 
         <ul>
           <li>
@@ -96,7 +96,7 @@ export class pwasPage {
             <a href="https://corehacker-10883.firebaseapp.com/">Ionic Hacker News as featured on <a href="https://hnpwa.com">HNPWA</a></a>
           </li>
           <li>
-            <a href="https://stencilpaint-8ba3c.firebaseapp.com/">StencilPaint</a>
+            <a href="https://stencilbeer.firebaseapp.com">IonicBeer</a>
           </li>
         </ul>
       </div>

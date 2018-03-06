@@ -24,6 +24,9 @@ export class SiteHeader {
           <stencil-route-link url="/resources"  exact={true}>
             Resources
           </stencil-route-link>
+          <stencil-route-link url='/community' exact={true}>
+            Community
+          </stencil-route-link>
           <a href="https://github.com/ionic-team/stencil">
             GitHub
           </a>
