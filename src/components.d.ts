@@ -54,6 +54,33 @@ declare global {
 
 
 declare global {
+  interface HTMLContentHeaderElement extends HTMLStencilElement {
+
+  }
+  var HTMLContentHeaderElement: {
+    prototype: HTMLContentHeaderElement;
+    new (): HTMLContentHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'content-header': HTMLContentHeaderElement;
+  }
+  interface ElementTagNameMap {
+    'content-header': HTMLContentHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'content-header': JSXElements.ContentHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ContentHeaderAttributes extends HTMLAttributes {
+      'onScrolledOver'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLDemosPageElement extends HTMLStencilElement {
 
   }

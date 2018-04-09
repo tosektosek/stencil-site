@@ -4,7 +4,7 @@
 
 Stencil requires a recent LTS version of [NodeJS](https://nodejs.org/) and npm. Make sure you've installed and/or updated Node before continuing.
 
-### Reusable Components
+<content-header>Reusable Components</content-header>
 
 Stencil can be used to create standalone components, or entire apps.
 

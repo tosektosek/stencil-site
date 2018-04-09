@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 @Component({
   tag: 'site-menu',
@@ -6,14 +6,37 @@ import { Component } from '@stencil/core';
 })
 export class SiteMenu {
 
+  @Element() el: Element;
+
+  collapse(ev) {
+    const expandedElements = this.el.getElementsByClassName('expand');
+
+    if (expandedElements.length > 0) {
+      for (let i = 0; i < expandedElements.length; i++) {
+        expandedElements[i].classList.add('collapse');
+        expandedElements[i].classList.remove('expand');
+      }
+    }
+
+    const closeUL: HTMLUListElement = ev.target.nextSibling;
+
+    if (closeUL.classList.contains('collapse')) {
+      closeUL.classList.remove('collapse');
+      closeUL.classList.add('expand');
+    } else {
+      closeUL.classList.remove('expand');
+      closeUL.classList.add('collapse');
+    }
+  }
+
   render() {
     return (
       <div>
         <lazy-iframe class='star-button' src='https://ghbtns.com/github-btn.html?user=ionic-team&repo=stencil&type=star&count=true' frameBorder='0' scrolling='0' width='170px' height='20px'></lazy-iframe>
         <ul id='menu-list'>
           <li>
-            <h4>Introduction</h4>
-            <ul>
+            <h4 onClick={(event) => this.collapse(event)}>Introduction</h4>
+            <ul class='expand'>
               <li>
                 <stencil-route-link url='/docs/intro'>
                   Why Stencil
@@ -48,8 +71,8 @@ export class SiteMenu {
           </li>
 
           <li>
-            <h4>Reference</h4>
-            <ul>
+            <h4 onClick={(event) => this.collapse(event)}>Reference</h4>
+            <ul class='collapse'>
 
               <li>
                 <stencil-route-link url='/docs/component-lifecycle'>
@@ -119,8 +142,8 @@ export class SiteMenu {
           </li>
 
           <li>
-            <h4>Guides</h4>
-            <ul>
+            <h4 onClick={(event) => this.collapse(event)}>Guides</h4>
+            <ul class='collapse'>
               <li>
                 <stencil-route-link url='/docs/distribution'>
                   Distribution
@@ -226,8 +249,8 @@ export class SiteMenu {
           </li>*/}
 
           <li>
-            <h4>Community</h4>
-            <ul>
+            <h4 onClick={(event) => this.collapse(event)}>Community</h4>
+            <ul class='collapse'>
               <li>
                 <stencil-route-link url='/docs/community/how-to-contribute'>
                   How to Contribute
