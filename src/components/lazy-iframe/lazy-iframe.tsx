@@ -1,4 +1,4 @@
-import { Component, Element, Prop, State, Event, EventEmitter } from '@stencil/core';
+import { Component, Element, Prop, State, Event, EventEmitter, h } from '@stencil/core';
 
 @Component({
   tag: 'lazy-iframe',

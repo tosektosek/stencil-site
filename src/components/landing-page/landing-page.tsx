@@ -1,13 +1,13 @@
-import { Component, Element, Prop, State, Listen } from '@stencil/core';
+import { Component, Element, Prop, State, Listen, h, getDocument, getWindow } from '@stencil/core';
 import copy from 'copy-text-to-clipboard';
-
-const IS_EDGE = (document as any).documentMode || /Edge/.test(navigator.userAgent) ? true : false;
 
 @Component({
   tag: 'landing-page',
   styleUrl: 'landing-page.css'
 })
 export class LandingPage {
+  win = getWindow(this);
+  doc = getDocument(this);
 
   @Element() el!: Element;
 
@@ -16,7 +16,7 @@ export class LandingPage {
   @State() isCopied = false;
 
   constructor() {
-    document.title = `Stencil`;
+    this.doc.title = `Stencil`;
   }
 
   videoPlayer: any;
@@ -30,9 +30,9 @@ export class LandingPage {
     // just link to the youtube video directly like we do on mobile
 
     // attach youtube iframe api
-    const tag = document.createElement('script');
+    const tag = this.doc.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';
-    const firstScriptTag = document.getElementsByTagName('script')[0];
+    const firstScriptTag = this.doc.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     window['onYouTubeIframeAPIReady'] = () => {
@@ -40,7 +40,7 @@ export class LandingPage {
     }
   }
 
-  @Listen('window:keyup')
+  @Listen('keyup', { target: 'window' })
   handleKeyUp(ev: any) {
     if (ev.keyCode === 27 && this.isModalOpen) {
       this.closeModal();
@@ -49,33 +49,34 @@ export class LandingPage {
   }
 
   handleWatchVideo() {
-    if (window.matchMedia('(min-width: 768px)').matches || IS_EDGE) {
+    if (this.win.matchMedia('(min-width: 768px)').matches || (this.doc as any).documentMode || /Edge/.test(this.win.navigator.userAgent)) {
       this.openModal();
     } else {
-      window.location.href = 'https://youtu.be/UfD-k7aHkQE';
+      this.win.location.href = 'https://youtu.be/UfD-k7aHkQE';
     }
   }
 
   openModal() {
-    const bod = (document.querySelector('body') as HTMLElement);
-    const modal = (document.querySelector('.modal') as HTMLElement);
+    this.doc.body.classList.add('no-scroll');
 
-    bod.classList.add('no-scroll');
-    modal.style.display = "block";
-    modal.classList.remove('modal--hide');
-    modal.classList.add('modal--show');
+    const modal = (this.doc.querySelector('.modal') as HTMLElement);
+    if (modal) {
+      modal.style.display = "block";
+      modal.classList.remove('modal--hide');
+      modal.classList.add('modal--show');
 
-    this.isModalOpen = true;
+      this.isModalOpen = true;
+    }
   }
 
   closeModal() {
-    const bod = (document.querySelector('body') as HTMLElement);
-    const modal = (document.querySelector('.modal') as HTMLElement);
-
-    bod.classList.remove('no-scroll');
-    modal.classList.remove('modal--show');
-    modal.classList.add('modal--hide');
-    setTimeout(() => { modal.style.display = "none"; }, 200)
+    this.doc.body.classList.remove('no-scroll');
+    const modal = (this.doc.querySelector('.modal') as HTMLElement);
+    if (modal) {
+      modal.classList.remove('modal--show');
+      modal.classList.add('modal--hide');
+      setTimeout(() => { modal.style.display = "none"; }, 200)
+    }
 
     this.videoPlayer.pauseVideo();
 
