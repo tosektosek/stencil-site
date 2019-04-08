@@ -142,7 +142,7 @@ export class TodoList {
 We can now listen to this event directly on the component in our JSX using the following syntax:
 
 ```tsx
-<todo-list onTodoCompleted={ev => this.someMethod(ev)} />
+<todo-list todoCompleted={ev => this.someMethod(ev)} />
 ```
 
 ## Listening events from a non-JSX element
